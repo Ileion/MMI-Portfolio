@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/CV_SETUP.md">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/CV_SETUP.md" />
+              <option name="updatedContent" value="# CV Setup Instructions&#10;&#10;Your About page has been updated with complete CV sections including:&#10;&#10;## 1. CV Download Button&#10;- File path expected: `/public/CV_Md_Minhazul_Islam.pdf`&#10;- The download link points to: `href=&quot;/CV_Md_Minhazul_Islam.pdf&quot;`&#10;&#10;## 2. CV Online View Section&#10;- The page has an embedded CV preview in the &quot;Full CV&quot; section&#10;- You can customize the education, skills, and languages information&#10;&#10;## 3. To Add Your Actual CV PDF:&#10;&#10;### Option A: Using an Online Tool (Recommended)&#10;1. Create your CV using:&#10;   - Google Docs → Download as PDF&#10;   - Canva → Download as PDF&#10;   - Microsoft Word → Export as PDF&#10;   - Any modern resume builder&#10;&#10;2. Name the file: `CV_Md_Minhazul_Islam.pdf`&#10;&#10;3. Place it in the `public` folder: `F:\MMI-Portfolio\public\CV_Md_Minhazul_Islam.pdf`&#10;&#10;### Option B: Using Node.js (jsPDF library)&#10;If you want to generate PDFs programmatically, you can:&#10;1. Install: `npm install jspdf`&#10;2. Create a script to generate the PDF with your information&#10;&#10;## 4. What's Included in Your About Page:&#10;&#10;✓ Introduction with your photo&#10;✓ Why you chose Applied Computer Science (Electronics-ICT)&#10;✓ Unique hobbies (Robotics, Game Dev, Photography, Rock Climbing)&#10;✓ Technical Skills (organized by category)&#10;✓ Soft Skills (8 key competencies with descriptions)&#10;✓ Future Vision (Short, Medium, and Long-term goals)&#10;✓ CV Section (View Online + Download buttons)&#10;✓ Full CV Preview (Education, Skills, Languages)&#10;&#10;## 5. Customization Tips:&#10;&#10;- Update skills in the &quot;Technical Skills&quot; section&#10;- Modify hobbies to match your actual interests&#10;- Update the &quot;Full CV&quot; section with your real data&#10;- Add your actual PDF file to the public folder&#10;&#10;## 6. Theme Settings:&#10;&#10;Your portfolio is set to Light Mode by default with:&#10;- Background: White (#FFFFFF)&#10;- Primary Color: Indigo (#6366f1)&#10;- Secondary Color: Violet (#8b5cf6)&#10;- Accent Color: Pink (#ec4899)&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

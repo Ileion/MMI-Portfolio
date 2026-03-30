@@ -81,7 +81,7 @@ export default function Blog() {
   }
 
   return (
-    <div className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8 section-light section-dark">
+    <div className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-950">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div

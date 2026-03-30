@@ -7,57 +7,39 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'AI Chat Application',
-      description: 'A real-time chat application with AI integration capabilities. Features include message persistence, user authentication, and AI-powered responses.',
-      image: 'https://images.unsplash.com/photo-1676299081847-824916de8e6f?w=500&h=300&fit=crop',
-      tech: ['React', 'Node.js', 'WebSocket', 'MongoDB', 'AI API'],
+      title: 'Automatic Pet Feeder',
+      description: 'An IoT-based automatic pet feeder system that dispenses food at scheduled times. Features include mobile app control, real-time monitoring, and food level alerts.',
+      image: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=500&h=300&fit=crop',
+      tech: ['Arduino', 'IoT', 'Mobile App', 'Node.js', 'Firebase'],
       link: '#',
-      color: 'from-blue-500 to-cyan-500',
+      color: 'from-orange-500 to-red-500',
     },
     {
       id: 2,
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with product management, shopping cart, payment integration, and order tracking.',
-      image: 'https://images.unsplash.com/photo-1661956600684-fc46ab6133e7?w=500&h=300&fit=crop',
-      tech: ['Next.js', 'MongoDB', 'Stripe', 'Tailwind CSS', 'TypeScript'],
+      title: 'IoT Simulation',
+      description: 'A comprehensive IoT simulation platform for testing and prototyping connected devices. Includes sensor data visualization, device management, and real-time monitoring.',
+      image: 'https://images.unsplash.com/photo-1518611505868-d7d87a60b754?w=500&h=300&fit=crop',
+      tech: ['Python', 'MQTT', 'React', 'WebSocket', 'MongoDB'],
+      link: '#',
+      color: 'from-blue-500 to-purple-500',
+    },
+    {
+      id: 3,
+      title: 'Travel Forum',
+      description: 'A community-driven travel forum platform where users can share experiences, tips, and recommendations. Features include user profiles, discussions, and itinerary sharing.',
+      image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=500&h=300&fit=crop',
+      tech: ['Next.js', 'PostgreSQL', 'Express', 'TypeScript', 'Tailwind CSS'],
       link: '#',
       color: 'from-green-500 to-emerald-500',
     },
     {
-      id: 3,
-      title: 'Task Management System',
-      description: 'Collaborative task management tool with real-time updates, team assignments, and project tracking features.',
-      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop',
-      tech: ['Vue.js', 'Firebase', 'Tailwind', 'JavaScript'],
-      link: '#',
-      color: 'from-purple-500 to-pink-500',
-    },
-    {
       id: 4,
-      title: 'Portfolio Website',
-      description: 'Modern responsive portfolio website showcasing projects and blog articles with smooth animations and dark mode support.',
-      image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop',
-      tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+      title: 'Restaurant Food Ordering System (Chapeau)',
+      description: 'A full-stack restaurant food ordering application built for academic project. Includes menu management, order tracking, and payment integration.',
+      image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&h=300&fit=crop',
+      tech: ['Web Development', 'Database Design', 'Team Collaboration', 'Full-Stack'],
       link: '#',
       color: 'from-yellow-500 to-orange-500',
-    },
-    {
-      id: 5,
-      title: 'Social Media Analytics',
-      description: 'Data visualization dashboard for social media analytics with real-time metrics, charts, and insights.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop',
-      tech: ['React', 'Chart.js', 'Express', 'PostgreSQL'],
-      link: '#',
-      color: 'from-red-500 to-pink-500',
-    },
-    {
-      id: 6,
-      title: 'Weather App',
-      description: 'Real-time weather application with location-based forecast, weather alerts, and historical data visualization.',
-      image: 'https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=500&h=300&fit=crop',
-      tech: ['React', 'Weather API', 'Axios', 'Tailwind CSS'],
-      link: '#',
-      color: 'from-indigo-500 to-blue-500',
     },
   ]
 
@@ -81,7 +63,7 @@ export default function Projects() {
   }
 
   return (
-    <div className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8 section-light section-dark">
+    <div className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-950">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div

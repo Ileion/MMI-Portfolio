@@ -14,6 +14,8 @@ const config: Config = {
         primary: '#6366f1',
         secondary: '#8b5cf6',
         accent: '#ec4899',
+        // custom paper color for off-white background - pure white
+        paper: '#FFFFFF',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in',

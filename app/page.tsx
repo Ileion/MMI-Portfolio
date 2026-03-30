@@ -17,7 +17,7 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20 overflow-hidden bg-white dark:bg-slate-950">
         {/* Subtle Background */}
         <div className="absolute inset-0 -z-10 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-50/50 via-transparent to-slate-100/30 dark:from-slate-900/20 dark:to-slate-950/20"></div>
+          {/* Removed gradient overlay for pure white background */}
           <motion.div
             animate={{
               scale: [1, 1.1, 1],
@@ -215,8 +215,8 @@ export default function Home() {
       <section id="projects-preview" className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-white dark:bg-slate-950">
         {/* Animated gradient background */}
         <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-50/50 via-transparent to-slate-100/50 dark:from-slate-900/30 dark:via-transparent dark:to-slate-900/30"></div>
-          
+          {/* Removed gradient overlay for pure white background */}
+
           {/* Animated background shapes */}
           <motion.div
             animate={{
@@ -264,28 +264,25 @@ export default function Home() {
             <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto"></div>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
                 title: 'Automatic Pet Feeder',
                 description: 'IoT project for automated pet feeding with smart scheduling',
                 tech: ['Arduino', 'IoT', 'Sensors'],
                 color: 'from-blue-500 to-cyan-500',
-                icon: '🐾',
               },
               {
                 title: 'IoT Simulation',
                 description: 'Skills 2 project demonstrating IoT concepts and simulations',
                 tech: ['Python', 'IoT', 'Simulation'],
                 color: 'from-green-500 to-emerald-500',
-                icon: '⚙️',
               },
               {
                 title: 'TravelForum',
                 description: 'Community platform for travel discussions using Livewire',
                 tech: ['PHP', 'Livewire', 'Laravel'],
                 color: 'from-purple-500 to-pink-500',
-                icon: '✈️',
               },
             ].map((project, index) => (
               <motion.div
@@ -298,7 +295,6 @@ export default function Home() {
               >
                 <div className={`absolute inset-0 opacity-0 group-hover:opacity-10 bg-gradient-to-br ${project.color} transition-opacity duration-300`}></div>
                 <div className="relative z-10">
-                  <div className="text-5xl mb-4">{project.icon}</div>
                   <h3 className="text-2xl font-bold mb-3 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent group-hover:from-primary group-hover:to-secondary transition-all duration-300">{project.title}</h3>
                   <p className="text-slate-600 dark:text-slate-300 mb-6 text-base leading-relaxed">{project.description}</p>
                   <div className="flex gap-2 flex-wrap">
@@ -389,7 +385,11 @@ export default function Home() {
                 href="/contact"
                 className="flex flex-col items-center justify-center p-6 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-gradient-to-br from-white to-slate-50 dark:from-slate-900/70 dark:to-slate-800/50 hover:border-primary hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 h-full group"
               >
-                <span className="text-5xl mb-3 group-hover:scale-110 transition-transform duration-300">✉️</span>
+                <div className="w-12 h-12 mb-3 text-primary group-hover:scale-110 transition-transform duration-300">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
                 {/* Make Contact title match the styled gradient used in CV cards */}
                 <h3 className="text-lg font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent mb-2">Contact Me</h3>
                  <p className="text-sm text-slate-600 dark:text-slate-400 text-center">
@@ -405,12 +405,17 @@ export default function Home() {
                className="flex-1 min-w-[250px] max-w-xs"
              >
                <a
-                 href="#"
+                 href="/CV_Md_Minhazul_Islam.pdf"
                  target="_blank"
                  rel="noopener noreferrer"
                  className="flex flex-col items-center justify-center p-6 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-gradient-to-br from-white to-slate-50 dark:from-slate-900/70 dark:to-slate-800/50 hover:border-secondary hover:shadow-2xl hover:shadow-secondary/30 transition-all duration-300 h-full group"
                >
-                 <span className="text-5xl mb-3 group-hover:scale-110 transition-transform duration-300">👁️</span>
+                 <div className="w-12 h-12 mb-3 text-secondary group-hover:scale-110 transition-transform duration-300">
+                   <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                     <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                     <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                   </svg>
+                 </div>
                  <h3 className="text-lg font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent mb-2">View CV</h3>
                  <p className="text-sm text-slate-600 dark:text-slate-400 text-center">
                    Check my resume
@@ -425,11 +430,15 @@ export default function Home() {
               className="flex-1 min-w-[250px] max-w-xs"
             >
               <a
-                href="#"
-                download="Md_Minhazul_Islam_CV.pdf"
+                href="/CV_Md_Minhazul_Islam.pdf"
+                download="CV_Md_Minhazul_Islam.pdf"
                 className="flex flex-col items-center justify-center p-6 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-gradient-to-br from-white to-slate-50 dark:from-slate-900/70 dark:to-slate-800/50 hover:border-accent hover:shadow-2xl hover:shadow-accent/30 transition-all duration-300 h-full group"
               >
-                <span className="text-5xl mb-3 group-hover:scale-110 transition-transform duration-300">📥</span>
+                <div className="w-12 h-12 mb-3 text-accent group-hover:scale-110 transition-transform duration-300">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                    <path d="M12 2v20m10-10H2" />
+                  </svg>
+                </div>
                 <h3 className="text-lg font-bold bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent mb-2">Download CV</h3>
                 <p className="text-sm text-slate-600 dark:text-slate-400 text-center">
                   Get PDF file
@@ -467,7 +476,7 @@ export default function Home() {
                 <GitHubIcon />
               </motion.a>
               <motion.a
-                href="www.linkedin.com/in/md-minhazul-islam-3086b6306"
+                href="https://www.linkedin.com/in/md-minhazul-islam-3086b6306"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.15, rotate: 5 }}
